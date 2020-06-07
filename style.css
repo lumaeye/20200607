@@ -122,11 +122,46 @@ nav div a:hover {
   #picture div:nth-child(3) {
     background-image: url(./img/p-beach-2.jpg);
   }
-  #picture {
+  #content {
     width: 750px;
     margin: 0 auto;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav div {
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #picture {
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: block;
+  }
+  #picture div {
+    height: 450px;
+  }
+  #picture div:nth-child(2) {
+    background-image: url(./img/m-beach-1.png);
+  }
+  #picture div:nth-child(3) {
+    background-image: url(./img/m-beach-2.png);
+  }
+  #content {
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -ms-grid-columns: repeat 1, 1fr;
+        grid-template-columns: repeat 1, 1fr;
+  }
+  #content h1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
   }
 }
 /*# sourceMappingURL=style.css.map */

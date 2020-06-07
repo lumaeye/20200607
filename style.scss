@@ -106,7 +106,41 @@ nav{
           }
        
     }
-    #picture{
+    #content{
         @include table-box();
+    }
+}
+
+@media screen and (max-width:767px){
+    @mixin phone-box {
+        width:100%;
+        transition: 0.3s;
+    }
+    nav{
+        div{
+            @include phone-box();
+        }
+    }
+    #picture{
+        @include phone-box();
+        display: block;
+         div{
+            height: 450px;
+    
+            &:nth-child(2){
+          background-image: url(./img/m-beach-1.png);
+        }
+            &:nth-child(3){
+            background-image: url(./img/m-beach-2.png);
+          }
+        }
+       
+    }
+    #content{
+        @include phone-box();
+        grid-template-columns: repeat (1,1fr);
+        h1{
+            grid-column: 1/2;
+        }
     }
 }
