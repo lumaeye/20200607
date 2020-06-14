@@ -10,12 +10,12 @@
 nav {
   background: #25252577;
   padding: 30px 0;
+  position: fixed;
 }
 
 nav div {
   width: 1200px;
   margin: 0 auto;
-  position: fixed;
   width: 100%;
 }
 
