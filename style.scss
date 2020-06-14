@@ -29,6 +29,12 @@ nav{
         }
     }
 }
+
+#menu{
+    display:none;
+}
+
+
 #banner{
     width: 100%;
     height: 100vh;
@@ -90,7 +96,31 @@ nav{
     nav{
         div{
             @include table-box();
+            display: none;
         }
+               #menu{
+                   display:block;
+                   a{
+                       display: none;
+                       
+                       &:nth-child(1){
+                           display: block;
+                       }
+                   }
+                // 滑入顯示
+                &:hover a:nth-child(2){
+                    display: block;
+                    padding: 20px 0;
+                }
+                &:hover a:nth-child(3){
+                    display: block;
+                    padding: 20px 0;
+                }
+                &:hover a:nth-child(4){
+                    display: block;
+                    padding: 20px 0;
+                }
+               }
     }
     #picture{
         @include table-box();
@@ -119,6 +149,31 @@ nav{
     nav{
         div{
             @include phone-box();
+            display: none;
+        }
+
+        #menu{
+            display:block;
+            a{
+                display: none;
+                
+                &:nth-child(1){
+                    display: block;
+                }
+            }
+         // 滑入顯示
+         &:hover a:nth-child(2){
+             display: block;
+             padding: 20px 0;
+         }
+         &:hover a:nth-child(3){
+             display: block;
+             padding: 20px 0;
+         }
+         &:hover a:nth-child(4){
+             display: block;
+             padding: 20px 0;
+         }
         }
     }
     #picture{
